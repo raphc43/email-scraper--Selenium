@@ -4,8 +4,8 @@ from selenium import webdriver
 def getBrowserEmail(link):
 
   options = webdriver.ChromeOptions()
-  options.binary_location = "C:/Program Files/Google/Chrome/Application/chrome.exe" # Select a path where chrome.exe is located
-  driver = webdriver.Chrome('C:/Phantom/chromedriver.exe', chrome_options=options) # Select a path where chromedriver.exe is located
+  options.binary_location = "<path to chrome.exe>" # Select a path where chrome.exe is located
+  driver = webdriver.Chrome("<path to chromedriver.exe>", chrome_options=options) # Select a path where chromedriver.exe is located
 
   driver.get(link) # Fetching page
 
